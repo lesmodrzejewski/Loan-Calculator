@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myLoanCalc</title>
+</head>
+<body>
+    <h1>Loan Calculator</h1>
+    
+    <form id='loan-form'>
+
+        <div id='loan-amount-form'>
+            <label for="amount" id='loan-amount-label'>Loan Amount</label>
+            <br>
+            <input type="number" name="amount" id="loan-amount">
+            <br>
+        </div>
+
+
+        <div>
+            <label for="interest">Interest</label>
+            <br>
+            <input type="number" name="interest" id="loan-interest">
+            <br>
+        </div>
+
+        <div>
+            <label for="years-to-repay">Years to Repay</label>
+            <br>
+            <input type="number" name="years-to-repay" id="years-to-repay">
+            <br>
+            <br>
+        </div>   
+
+        <div>
+            <button type="submit" id="calculate">Calculate</button>
+        </div>
+
+    </form>
+
+    <div id="loading">
+        <h3>Loading...</h3>
+    </div>
+    <div id="results">
+
+        <div>
+            <label for="">Monthly Payment</label>
+            <input type="number" value='' id='monthly-payment' disabled>
+        </div>
+
+        <div>
+            <label for="">Total Payment</label>
+            <input type="number" value= '' id="total-payment" disabled>
+        </div>
+
+        <div>
+            <label for="">Total Interest</label>
+            <input type="number" value='' id="total-interest" disabled>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="app.js"></script>
+    
+</body>
+</html>
